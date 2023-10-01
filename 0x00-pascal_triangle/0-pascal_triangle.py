@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-"""Pascal Triangle"""
+"""Function for the Pascal Triangle"""
+
 
 def pascalTriangle(n):
-    if n <= 0:
-        return []
+    """Pascal Triangle"""
+    new_list = []
     for l in range(0, n):
+        first_list = []
         for i in range(0, l + 1):
-            print(bCoeffient(l, i), " ", end="" )
-        print()
+            first_list.append(bCoeffient(l, i))
+        new_list.append(first_list)
 
 
 def bCoeffient(n , k):
