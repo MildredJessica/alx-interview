@@ -1,7 +1,10 @@
+#!/usr/bin/python3
+"""Function to unlock boxes"""
+
+
 def canUnlockAll(boxes):
     unlocked = [0]
     for id, box in enumerate(boxes):
-        print("Here", id, box)
         if not box:
             continue
         for key in box:
