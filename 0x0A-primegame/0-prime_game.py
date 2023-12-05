@@ -1,11 +1,11 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """Prime Game Algorithm"""
 
 
 def is_prime(num):
     """Check if a given number is prime"""
-    for l in range(2, int(num ** 0.5)+ 1):
-        if not num % l:
+    for li in range(2, int(num ** 0.5) + 1):
+        if not num % li:
             return False
     return True
 
